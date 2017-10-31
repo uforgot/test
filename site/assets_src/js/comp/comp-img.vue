@@ -1,17 +1,20 @@
 /**
 * -----------------------------------------------------
-* Created by uforgot on 2017. 10. 30.
+* Created by uforgot on 2017. 10. 31.
 * test
 * -----------------------------------------------------
 */
 
 <template>
-    <div>
-        buttonadasdsdassasadasdasdas
+    <div class="test">
+        asdasdasjdlaksjdalks
     </div>
 </template>
 
 <style scoped lang="scss">
+    .test {
+        background:#ff0;
+    }
 </style>
 
 <script>

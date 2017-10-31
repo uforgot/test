@@ -1,13 +1,13 @@
 /**
 * -----------------------------------------------------
-* Created by uforgot on 2017. 10. 30.
+* Created by uforgot on 2017. 10. 31.
 * test
 * -----------------------------------------------------
 */
 
 <template>
     <div>
-        paperasdaasds
+        <slot></slot>
     </div>
 </template>
 

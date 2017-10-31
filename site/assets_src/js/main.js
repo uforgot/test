@@ -6,23 +6,12 @@
  */
 
 import Vue from 'vue';
-import App from './app.vue';
-
+import ViewApp from './view/view-app.vue';
 
 function init() {
-    console.log('bbb');
-
     window.app = new Vue({
-        render: h => h(App)
+        render: h => h(ViewApp)
     }).$mount('#app');
-
-    // new Vue({
-    //     el:'#test-app',
-    //     components: {
-    //         'comp-button':CompButton,
-    //         'comp-paper':CompPaper
-    //     }
-    // })
 }
 
 window.onLoad = init();

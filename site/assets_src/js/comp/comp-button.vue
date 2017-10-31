@@ -6,25 +6,21 @@
 */
 
 <template>
-    <div id="app">
-        <comp-paper></comp-paper>
-        <comp-button></comp-button>
+    <div class="test" @mouseover="testMethod">
+        <button>test</button>
     </div>
 </template>
 
 <style scoped lang="scss">
+    .test {
+        background: #f00;
+    }
 </style>
 
 <script>
-    import CompButton from './comp-button.vue';
-    import CompPaper from './comp-paper.vue';
-
     export default {
         mixins: [],
-        components: {
-            'comp-button':CompButton,
-            'comp-paper':CompPaper
-        },
+        components: {},
 
         props: {},
         data: function () {
@@ -32,19 +28,27 @@
         },
 
         computed: {},
-        methods: {},
+        methods: {
+            testMethod : function() {
+                console.log('test');
+            }
+        },
         watch: {},
 
         //life cycle
         //beforeCreate : function() {},
         //created : function() {},
         //beforeMount : function() {},
-        //mounted : function() {},
+        //mounted : function() {
+        //    this.$el.addEventListener('mouseover', e => { this.testMethod(e) });
+        //},
         //beforeUpdate : function() {},
         //updated : function() {},
         //activated : function() {},
         //deactivated : function() {},
-        //beforeDestroy : function () {},
+        //beforeDestroy : function () {
+
+        //},
         //destroyed : function() {},
         dummy: {}
     }
